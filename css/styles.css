@@ -438,6 +438,9 @@ body {
 .footer-socials-link:focus {
   background-color: var(--color-success);
 }
+.subscribe-feedback {
+  margin-left: 80px;
+}
 .subscribe-feedback-title {
   font-family: var(--font-primary);
   font-weight: 500;
@@ -446,10 +449,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-light);
   margin-bottom: 16px;
-  margin-left: 80px;
 }
 .subscribe-wrapper {
-  margin-left: 80px;
   display: flex;
   justify-content: center;
 }
@@ -651,6 +652,7 @@ body {
 }
 /* -------------------FORM---------------- */
 .modal-feedback-form {
+  min-height: 456px;
 }
 .modal-feedback-label {
   display: block;
@@ -701,6 +703,9 @@ body {
   padding: 8px 16px;
   resize: none;
   margin-bottom: 16px;
+  transition-property: border-color;
+  transition-duration: var(--timing);
+  transition-timing-function: var(--timing-function);
 }
 
 .modal-feedback-comment:focus {
@@ -743,7 +748,7 @@ body {
 }
 .modal-feedback-button {
   display: block;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   font-weight: 500;
   font-size: 16px;
@@ -754,7 +759,6 @@ body {
   color: var(--color-light);
   border: none;
   box-shadow: 0px 4px 4px 0px #00000026;
-  position: absolute;
-  left: 119px;
+  margin: 0 auto;
   cursor: pointer;
 }
